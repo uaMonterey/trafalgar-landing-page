@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Muli";
+  src: url("../fonts/Muli/Muli-Light.eot");
+  src: url("../fonts/Muli/Muli-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli/Muli-Light.woff2") format("woff2"),
+    url("../fonts/Muli/Muli-Light.woff") format("woff"), url("../fonts/Muli/Muli-Light.ttf") format("truetype"),
+    url("../fonts/Muli/Muli-Light.svg#Muli-Regular") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Muli";
+  src: url("../fonts/Muli/Muli-Regular.eot");
+  src: url("../fonts/Muli/Muli-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli/Muli-Regular.woff2") format("woff2"),
+    url("../fonts/Muli/Muli-Regular.woff") format("woff"), url("../fonts/Muli/Muli-Regular.ttf") format("truetype"),
+    url("../fonts/Muli/Muli-Regular.svg#Muli-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Muli";
+  src: url("../fonts/Muli/Muli-Bold.eot");
+  src: url("../fonts/Muli/Muli-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Muli/Muli-Bold.woff2") format("woff2"),
+    url("../fonts/Muli/Muli-Bold.woff") format("woff"), url("../fonts/Muli/Muli-Bold.ttf") format("truetype"),
+    url("../fonts/Muli/Muli-Bold.svg#Muli-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --main-color: #7d7987;
+  --title-color: #000000;
+  --accent-color: #458ff6;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 1.52;
+  color: var(--main-color);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding-left: 51px;
+  padding-right: 51px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 3.33;
+  color: var(--accent-color);
+  background-color: transparent;
+  text-decoration: none;
+  border: 1.4px solid var(--accent-color);
+  border-radius: 55px;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+.btn-accent {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+  color: var(--accent-color);
+  background-color: transparent;
+}
+
+.title {
+  font-weight: 700;
+  color: var(--title-color);
+}
+
+.page-title {
+  font-size: 48px;
+  line-height: 1.17;
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.56;
+}
+
+.item-title {
+  font-size: 24px;
+  line-height: 2.33;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  text-decoration: none;
+  color: #233348;
+}
+
+.menu {
+  color: #1f1534;
+}
