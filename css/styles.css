@@ -1,35 +1,35 @@
 @font-face {
-  font-family: "Muli";
-  src: url("../fonts/Muli/Muli-Light.eot");
-  src: url("../fonts/Muli/Muli-Light.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Muli/Muli-Light.woff2") format("woff2"),
-    url("../fonts/Muli/Muli-Light.woff") format("woff"),
-    url("../fonts/Muli/Muli-Light.ttf") format("truetype"),
-    url("../fonts/Muli/Muli-Light.svg#Muli-Regular") format("svg");
+  font-family: 'Muli';
+  src: url('../fonts/Muli/Muli-Light.eot');
+  src: url('../fonts/Muli/Muli-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Muli/Muli-Light.woff2') format('woff2'),
+    url('../fonts/Muli/Muli-Light.woff') format('woff'),
+    url('../fonts/Muli/Muli-Light.ttf') format('truetype'),
+    url('../fonts/Muli/Muli-Light.svg#Muli-Regular') format('svg');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Muli";
-  src: url("../fonts/Muli/Muli-Regular.eot");
-  src: url("../fonts/Muli/Muli-Regular.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Muli/Muli-Regular.woff2") format("woff2"),
-    url("../fonts/Muli/Muli-Regular.woff") format("woff"),
-    url("../fonts/Muli/Muli-Regular.ttf") format("truetype"),
-    url("../fonts/Muli/Muli-Regular.svg#Muli-Regular") format("svg");
+  font-family: 'Muli';
+  src: url('../fonts/Muli/Muli-Regular.eot');
+  src: url('../fonts/Muli/Muli-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Muli/Muli-Regular.woff2') format('woff2'),
+    url('../fonts/Muli/Muli-Regular.woff') format('woff'),
+    url('../fonts/Muli/Muli-Regular.ttf') format('truetype'),
+    url('../fonts/Muli/Muli-Regular.svg#Muli-Regular') format('svg');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Muli";
-  src: url("../fonts/Muli/Muli-Bold.eot");
-  src: url("../fonts/Muli/Muli-Bold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Muli/Muli-Bold.woff2") format("woff2"),
-    url("../fonts/Muli/Muli-Bold.woff") format("woff"),
-    url("../fonts/Muli/Muli-Bold.ttf") format("truetype"),
-    url("../fonts/Muli/Muli-Bold.svg#Muli-Bold") format("svg");
+  font-family: 'Muli';
+  src: url('../fonts/Muli/Muli-Bold.eot');
+  src: url('../fonts/Muli/Muli-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Muli/Muli-Bold.woff2') format('woff2'),
+    url('../fonts/Muli/Muli-Bold.woff') format('woff'),
+    url('../fonts/Muli/Muli-Bold.ttf') format('truetype'),
+    url('../fonts/Muli/Muli-Bold.svg#Muli-Bold') format('svg');
   font-weight: 700;
   font-style: normal;
 }
@@ -40,12 +40,47 @@
   --accent-color: #458ff6;
 }
 
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
-  font-family: "Muli", sans-serif;
+  font-family: 'Muli', sans-serif;
   font-weight: 300;
-  font-size: 21px;
-  line-height: 1.52;
+  font-size: 18px;
+  line-height: 1.67;
   color: var(--main-color);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
 
 .list {
@@ -90,6 +125,11 @@ body {
   background-color: transparent;
 }
 
+.btn-wrap {
+  margin-top: 72px;
+  text-align: center;
+}
+
 .title {
   font-weight: 700;
   color: var(--title-color);
@@ -111,6 +151,8 @@ body {
 }
 
 .logo {
+  display: inline-flex;
+  align-items: center;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.25;
@@ -118,6 +160,128 @@ body {
   color: #233348;
 }
 
-.menu {
-  color: #1f1534;
+.text-center {
+  text-align: center;
+}
+
+.section-header {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 80px;
+  max-width: 952px;
+}
+
+/* Navigation */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.logo-img {
+  padding-right: 12px;
+}
+
+.menu-list {
+  display: flex;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.menu-link {
+  font-weight: 400;
+  color: rgba(30, 21, 51, 0.5);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  font-weight: 700;
+  color: rgb(30, 21, 51);
+}
+
+/* .services {
+  background-color: aquamarine;
+} */
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.services-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  padding: 45px;
+  flex-basis: calc(100% / 3 - 30px);
+  background: #ffffff;
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  border-radius: 20px;
+}
+
+.content-wrapper {
+  width: calc(100% / 12 * 5);
+}
+
+.providers {
+  margin-left: auto;
+}
+
+.providers .btn,
+.app-store .btn {
+  margin-top: 40px;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.articles-item {
+  margin-left: 30px;
+  margin-top: 30px;
+
+  flex-basis: calc(100% / 3 - 30px);
+
+  overflow: hidden;
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  border-radius: 20px;
+}
+
+.article-wrap {
+  padding-top: 21px;
+  padding-right: 51px;
+  padding-bottom: 35px;
+  padding-left: 33px;
+}
+
+.article-title {
+  margin-bottom: 12px;
+  font-size: 21px;
+  line-height: 1.52;
+}
+
+.article-text {
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.read-more {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.65;
+
+  color: var(--accent-color);
+}
+
+.read-more:hover,
+.read-more:focus {
+  font-weight: 700;
 }
